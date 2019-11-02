@@ -1,3 +1,4 @@
+
 $(document).ready(() => {
     $('.works__btns button, .works__btns a').on('focus', ({ target }) => {
         $(target).parents('.works__element').addClass('works__element--active');
@@ -25,6 +26,29 @@ $(document).ready(() => {
         if (animate && $('.skills').offset().top <= $(window).scrollTop() + 150) {
             moveProgressBar('.progress__element', '.progress__line', '.progress__tooltip');
             animate = false;
+        }
+    });
+
+    $('.carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        dots: true,
+        nav: true,
+        navText: [],
+        items: 5,
+        responsive:{
+            0:{
+                items:1
+            },
+            468:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            980: {
+                items:5
+            }
         }
     });
 

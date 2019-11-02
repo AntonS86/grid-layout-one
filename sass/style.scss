@@ -7,6 +7,8 @@
 @import "core";
 
 
+@import "../node_modules/owl.carousel/src/scss/owl.carousel";
+@import "../node_modules/owl.carousel/src/scss/owl.theme.default";
 @import "blocks/header";
 @import "blocks/menu";
 @import "blocks/banner";
@@ -17,4 +19,8 @@
 @import "blocks/skills";
 @import "blocks/progress";
 @import "blocks/blog";
-
+@import "blocks/clients";
+@import "blocks/owl";
+@import "blocks/contacts";
+@import "blocks/form";
+@import "blocks/footer";
